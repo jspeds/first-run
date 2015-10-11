@@ -32,7 +32,7 @@ function sf(fromstation){
 			t-=f;
 			if (ff[f][t] != undefined){
 				var val=ff[f][t].split(" ");
-				document.getElementById(sa[i]).innerHTML=to1dec(val[ft]);
+				document.getElementById(sa[i]).innerHTML=val[ft];
 			}
 		}
 	}
@@ -64,14 +64,11 @@ function saef(fromstation){
 				if ((ft==1)||(ft==4)||(ft==5)||(ft==7)){
 					document.getElementById(ts).innerHTML="na";
 				} else {
-					document.getElementById(ts).innerHTML=to1dec(val[ft]);
+					document.getElementById(ts).innerHTML=val[ft];
 				}
 			}
 		}
 	}
-}
-function to1dec(num){
-	return parseFloat(num).toFixed(1).toString();
 }
 function setft(sel){
 	ft=parseInt(sel.value);
