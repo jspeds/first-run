@@ -22,7 +22,7 @@ function sf(fromstation){
 	fs=fromstation;
 	document.getElementById(47).innerHTML='na';
 	document.getElementById(56).innerHTML='na';
-	for (i=0;i<sa.length;i++){
+	for (var i=0,j=sa.length;i<j;i++){
 		var f=fromstation;
 		var t=sa[i];
 		if (t==f){
@@ -40,10 +40,10 @@ function sf(fromstation){
 function saef(fromstation){
 	aeflag=1;
 	fs=fromstation;
-	for (i=0;i<sa.length;i++){
+	for (var i=0,j=sa.length;i<j;i++){
 		document.getElementById(sa[i]).innerHTML="na";
 	}
-	for (i=0;i<aesa.length;i++){
+	for (var i=0,j=aesa.length;i<j;i++){
 		var f=fromstation;
 		var t=aesa[i];
 		if (t==f){
