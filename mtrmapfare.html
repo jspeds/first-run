@@ -1,6 +1,6 @@
 <!doctype html><html><head><title>mtr fare map</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="mtrmapfare.css"><script src="fares.js"></script><script src="aefares.js"></script><!-- Author: Jackson Poon, Date: Sep 29, 2015, Version: 1.0 --></head>
 	<body>
-		<select onchange="setft(this);">
+		<select onchange="ns.setft(this);">
 			<option value="0">成人八達通</option>
 			<option value="2">成人單程</option>
 			<option value="3">小童八達通</option>
@@ -13,7 +13,7 @@
 		<table cellspacing=2 cellpadding=5 style="overflow:auto">
 			<tr>
 				<td colspan=22></td>
-				<td class=erksr onclick="sf(78)">落馬洲</td>
+				<td class=erksr onclick="ns.sf(78)">落馬洲</td>
 				<td id=78></td>
 			</tr>
 			<tr>
@@ -21,111 +21,111 @@
 				<td class=erksr>古洞</td>
 				<td></td>
 				<td colspan=2></td>
-				<td class=er onclick="sf(76)">羅湖</td>
+				<td class=er onclick="ns.sf(76)">羅湖</td>
 				<td id=76></td>
 			</tr>
 			<tr>
 				<td colspan=6></td>
-				<td class=wr onclick="sf(117)">朗屏</td>
+				<td class=wr onclick="ns.sf(117)">朗屏</td>
 				<td id=117></td>
-				<td class=wr onclick="sf(116)">元朗</td>
+				<td class=wr onclick="ns.sf(116)">元朗</td>
 				<td id=116></td>
 				<td colspan=16></td>
-				<td class=er onclick="sf(75)">上水</td>
+				<td class=er onclick="ns.sf(75)">上水</td>
 				<td id=75></td>
 			</tr>
 			<tr>
 				<td colspan=4></td>
-				<td class=wr onclick="sf(118)">天水圍</td>
+				<td class=wr onclick="ns.sf(118)">天水圍</td>
 				<td id=118></td>
 				<td colspan=14></td>
 				<td class=ksr>&nbsp;</td>
 				<td colspan=7></td>
-				<td class=er onclick="sf(74)">粉嶺</td>
+				<td class=er onclick="ns.sf(74)">粉嶺</td>
 				<td id=74></td>
 				<td colspan=20></td>
-				<td class=mos onclick="sf(103)">烏溪沙</td>
+				<td class=mos onclick="ns.sf(103)">烏溪沙</td>
 				<td id=103></td>
 			</tr>
 			<tr>
 				<td colspan=10></td>
-				<td class=wrksr onclick="sf(115)">錦上路</td>
+				<td class=wrksr onclick="ns.sf(115)">錦上路</td>
 				<td id=115></td>
 				<td colspan=18></td>
-				<td class=er onclick="sf(73)">太和</td>
+				<td class=er onclick="ns.sf(73)">太和</td>
 				<td id=73></td>
 				<td colspan=16></td>
-				<td class=mos onclick="sf(102)">馬鞍山</td>
+				<td class=mos onclick="ns.sf(102)">馬鞍山</td>
 				<td id=102></td>
 			</tr>
 			<tr>
 				<td colspan=2></td>
-				<td class=wr onclick="sf(119)">兆康</td>
+				<td class=wr onclick="ns.sf(119)">兆康</td>
 				<td id=119></td>
 				<td colspan=28></td>
-				<td class=er onclick="sf(72)">大埔墟</td>
+				<td class=er onclick="ns.sf(72)">大埔墟</td>
 				<td id=72></td>
 				<td colspan=12></td>
-				<td class=mos onclick="sf(101)">恆安</td>
+				<td class=mos onclick="ns.sf(101)">恆安</td>
 				<td id=101></td>
 			</tr>
 			<tr>
-				<td class=wr onclick="sf(120)">屯門</td>
+				<td class=wr onclick="ns.sf(120)">屯門</td>
 				<td id=120></td>
 				<td colspan=32></td>
-				<td class=er onclick="sf(71)">大學</td>
+				<td class=er onclick="ns.sf(71)">大學</td>
 				<td id=71></td>
 				<td colspan=8></td>
-				<td class=mos onclick="sf(100)">大水坑</td>
+				<td class=mos onclick="ns.sf(100)">大水坑</td>
 				<td id=100></td>
 			</tr>
 			<tr>
 				<td colspan=32></td>
-				<td class=er onclick="sf(69)">火炭</td>
+				<td class=er onclick="ns.sf(69)">火炭</td>
 				<td id=69></td>
 				<td colspan=2></td>
-				<td class=er onclick="sf(70)">馬場</td>
+				<td class=er onclick="ns.sf(70)">馬場</td>
 				<td id=70></td>
 				<td colspan=4></td>
-				<td class=mos onclick="sf(99)">石門</td>
+				<td class=mos onclick="ns.sf(99)">石門</td>
 				<td id=99></td>
 			</tr>
 			<tr>
 				<td colspan=10></td>
-				<td class=wr onclick="sf(114)">荃灣西</td>
+				<td class=wr onclick="ns.sf(114)">荃灣西</td>
 				<td id=114></td>
 				<td colspan=10></td>
 				<td class=wr>&nbsp;</td>
 				<td colspan=11></td>
-				<td class=er onclick="sf(68)">沙田</td>
+				<td class=er onclick="ns.sf(68)">沙田</td>
 				<td id=68></td>
-				<td class=mos onclick="sf(96)">車公廟</td>
+				<td class=mos onclick="ns.sf(96)">車公廟</td>
 				<td id=96></td>
-				<td class=mos onclick="sf(97)">沙田圍</td>
+				<td class=mos onclick="ns.sf(97)">沙田圍</td>
 				<td id=97></td>
-				<td class=mos onclick="sf(98)">第一城</td>
+				<td class=mos onclick="ns.sf(98)">第一城</td>
 				<td id=98></td>
 			</tr>
 			<tr>
 				<td colspan=12></td>
-				<td class=tw onclick="sf(25)">荃灣</td>
+				<td class=tw onclick="ns.sf(25)">荃灣</td>
 				<td id=25></td>
-				<td class=tw onclick="sf(24)">大窩口</td>
+				<td class=tw onclick="ns.sf(24)">大窩口</td>
 				<td id=24></td>
-				<td class=tw onclick="sf(23)">葵興</td>
+				<td class=tw onclick="ns.sf(23)">葵興</td>
 				<td id=23></td>
-				<td class=tw onclick="sf(22)">葵芳</td>
+				<td class=tw onclick="ns.sf(22)">葵芳</td>
 				<td id=22></td>
-				<td class=twtc onclick="sf(21)">荔景</td>
+				<td class=twtc onclick="ns.sf(21)">荔景</td>
 				<td id=21></td>
-				<td class=twwr onclick="sf(20)">美孚</td>
+				<td class=twwr onclick="ns.sf(20)">美孚</td>
 				<td id=20></td>
-				<td class=tw onclick="sf(19)">荔枝角</td>
+				<td class=tw onclick="ns.sf(19)">荔枝角</td>
 				<td id=19></td>
-				<td class=tw onclick="sf(18)">長沙灣</td>
+				<td class=tw onclick="ns.sf(18)">長沙灣</td>
 				<td id=18></td>
 				<td colspan=6></td>
-				<td class=ermos onclick="sf(67)">大圍</td>
+				<td class=ermos onclick="ns.sf(67)">大圍</td>
 				<td id=67></td>
 			</tr>
 			<tr>
@@ -135,70 +135,70 @@
 			</tr>
 			<tr>
 				<td colspan=22></td>
-				<td class=wrtc onclick="sf(53)">南昌</td>
+				<td class=wrtc onclick="ns.sf(53)">南昌</td>
 				<td id=53></td>
 				<td colspan=4></td>
-				<td class=tw onclick="sf(17)">深水埗</td>
+				<td class=tw onclick="ns.sf(17)">深水埗</td>
 				<td id=17></td>
 				<td colspan=2></td>
-				<td class=kt onclick="sf(7)">石硤尾</td>
+				<td class=kt onclick="ns.sf(7)">石硤尾</td>
 				<td id=7></td>
-				<td class=erkt onclick="sf(8)">九龍塘</td>
+				<td class=erkt onclick="ns.sf(8)">九龍塘</td>
 				<td id=8></td>
-				<td class=kt onclick="sf(9)">樂富</td>
+				<td class=kt onclick="ns.sf(9)">樂富</td>
 				<td id=9></td>
 			</tr>
 			<tr>
 				<td colspan=18></td>
-				<td class=tc onclick="sf(42)">青衣</td>
-				<td class=ae id=42 onclick="saef(46)"></td>
+				<td class=tc onclick="ns.sf(42)">青衣</td>
+				<td class=ae id=42 onclick="ns.saef(46)"></td>
 				<td colspan=10></td>
-				<td class=twkt onclick="sf(16)">太子</td>
+				<td class=twkt onclick="ns.sf(16)">太子</td>
 				<td id=16></td>
 				<td colspan=6></td>
-				<td class=kt onclick="sf(10)">黃大仙</td>
+				<td class=kt onclick="ns.sf(10)">黃大仙</td>
 				<td id=10></td>
-				<td class=ktmos onclick="sf(11)">鑽石山</td>
+				<td class=ktmos onclick="ns.sf(11)">鑽石山</td>
 				<td id=11></td>
-				<td class=kt onclick="sf(12)">彩虹</td>
+				<td class=kt onclick="ns.sf(12)">彩虹</td>
 				<td id=12></td>
 			</tr>
 			<tr>
 				<td colspan=24></td>
-				<td class=tc onclick="sf(41)">奧運</td>
+				<td class=tc onclick="ns.sf(41)">奧運</td>
 				<td id=41></td>
 				<td colspan=4></td>
-				<td class=twkt onclick="sf(6)">旺角</td>
+				<td class=twkt onclick="ns.sf(6)">旺角</td>
 				<td id=6></td>
 				<td colspan=2></td>
-				<td class=er onclick="sf(65)">旺東</td>
+				<td class=er onclick="ns.sf(65)">旺東</td>
 				<td id=65></td>
 				<td colspan=4></td>
 				<td class=mos>啟德</td>
 				<td></td>
 				<td colspan=2></td>
-				<td class=kt onclick="sf(13)">九龍灣</td>
+				<td class=kt onclick="ns.sf(13)">九龍灣</td>
 				<td id=13></td>
 			</tr>
 			<tr>
 				<td colspan=14></td>
 				<td class=aetc>&nbsp;</td>
 				<td colspan=15></td>
-				<td class=twkt onclick="sf(5)">油麻地</td>
+				<td class=twkt onclick="ns.sf(5)">油麻地</td>
 				<td id=5></td>
 				<td colspan=8></td>
 				<td class=mos>土瓜灣</td>
 				<td></td>
 				<td colspan=2></td>
-				<td class=kt onclick="sf(14)">牛頭角</td>
+				<td class=kt onclick="ns.sf(14)">牛頭角</td>
 				<td id=14></td>
 			</tr>
 			<tr>
 				<td colspan=26></td>
-				<td class=tc onclick="sf(40)">九龍</td>
-				<td class=ae id=40 onclick="saef(45)"></td>
+				<td class=tc onclick="ns.sf(40)">九龍</td>
+				<td class=ae id=40 onclick="ns.saef(45)"></td>
 				<td colspan=2></td>
-				<td class=tw onclick="sf(4)">佐敦</td>
+				<td class=tw onclick="ns.sf(4)">佐敦</td>
 				<td id=4></td>
 				<td colspan=4></td>
 				<td class=ktmos>何文田</td>
@@ -206,59 +206,59 @@
 				<td class=mos>馬頭圍</td>
 				<td></td>
 				<td colspan=4></td>
-				<td class=kt onclick="sf(15)">觀塘</td>
+				<td class=kt onclick="ns.sf(15)">觀塘</td>
 				<td id=15></td>
 				<td colspan=4></td>
-				<td class=tko onclick="sf(52)">寶琳</td>
+				<td class=tko onclick="ns.sf(52)">寶琳</td>
 				<td id=52></td>
 			</tr>
 			<tr>
 				<td colspan=6></td>
-				<td class=ae onclick="saef(56)">博覽館</td>
+				<td class=ae onclick="ns.saef(56)">博覽館</td>
 				<td id=56></td>
-				<td class=ae onclick="saef(47)">機場</td>
+				<td class=ae onclick="ns.saef(47)">機場</td>
 				<td id=47></td>
 				<td colspan=2></td>
-				<td class=tcsb onclick="sf(54)">欣澳</td>
+				<td class=tcsb onclick="ns.sf(54)">欣澳</td>
 				<td id=54></td>
 				<td colspan=8></td>
-				<td class=wr onclick="sf(111)">柯士甸</td>
+				<td class=wr onclick="ns.sf(111)">柯士甸</td>
 				<td id=111></td>
 				<td colspan=6></td>
-				<td class=tw id=44 onclick="sf(3)">尖沙咀</td>
+				<td class=tw id=44 onclick="ns.sf(3)">尖沙咀</td>
 				<td id=3></td>
-				<td class=wr onclick="sf(80)">尖東</td>
+				<td class=wr onclick="ns.sf(80)">尖東</td>
 				<td id=80></td>
-				<td class=erwrmos onclick="sf(64)">紅磡</td>
+				<td class=erwrmos onclick="ns.sf(64)">紅磡</td>
 				<td id=64></td>
 				<td class=kt>黃埔</td>
 				<td></td>
 				<td colspan=6></td>
-				<td class=kt onclick="sf(38)">藍田</td>
+				<td class=kt onclick="ns.sf(38)">藍田</td>
 				<td id=38></td>
 				<td colspan=4></td>
-				<td class=tko onclick="sf(51)">坑口</td>
+				<td class=tko onclick="ns.sf(51)">坑口</td>
 				<td id=51></td>
 			</tr>
 			<tr>
 				<td colspan=14></td>
-				<td class=sb onclick="sf(55)">迪士尼</td>
+				<td class=sb onclick="ns.sf(55)">迪士尼</td>
 				<td id=55></td>
 				<td colspan=28></td>
-				<td class=kttko onclick="sf(48)">油塘</td>
+				<td class=kttko onclick="ns.sf(48)">油塘</td>
 				<td id=48></td>
-				<td class=kttko onclick="sf(49)">調景嶺</td>
+				<td class=kttko onclick="ns.sf(49)">調景嶺</td>
 				<td id=49></td>
-				<td class=tko onclick="sf(50)">將軍澳</td>
+				<td class=tko onclick="ns.sf(50)">將軍澳</td>
 				<td id=50></td>
 			</tr>
 			<tr>
 				<td colspan=10></td>
-				<td class=tc onclick="sf(43)">東涌</td>
+				<td class=tc onclick="ns.sf(43)">東涌</td>
 				<td id=43></td>
 				<td colspan=16></td>
-				<td class=tc onclick="sf(39)">香港</td>
-				<td class=ae id=39 onclick="saef(44)"></td>
+				<td class=tc onclick="ns.sf(39)">香港</td>
+				<td class=ae id=39 onclick="ns.saef(44)"></td>
 				<td colspan=2></td>
 				<td class=tctko>添馬</td>
 				<td></td>
@@ -267,54 +267,54 @@
 				<td class=tko>維園</td>
 				<td></td>
 				<td colspan=12></td>
-				<td class=tko onclick="sf(57)">康城</td>
+				<td class=tko onclick="ns.sf(57)">康城</td>
 				<td id=57></td>
 			</tr>
 			<tr>
 				<td colspan=22></td>
-				<td class=hkwch onclick="sf(82)">港大</td>
+				<td class=hkwch onclick="ns.sf(82)">港大</td>
 				<td id=82></td>
-				<td class=hk onclick="sf(81)">西營盤</td>
+				<td class=hk onclick="ns.sf(81)">西營盤</td>
 				<td id=81></td>
-				<td class=hk onclick="sf(26)">上環</td>
+				<td class=hk onclick="ns.sf(26)">上環</td>
 				<td id=26></td>
-				<td class=twhk onclick="sf(1)">中環</td>
+				<td class=twhk onclick="ns.sf(1)">中環</td>
 				<td id=1></td>
-				<td class=adm onclick="sf(2)">金鐘</td>
+				<td class=adm onclick="ns.sf(2)">金鐘</td>
 				<td id=2></td>
-				<td class=hk onclick="sf(27)">灣仔</td>
+				<td class=hk onclick="ns.sf(27)">灣仔</td>
 				<td id=27></td>
-				<td class=hk onclick="sf(28)">銅鑼灣</td>
+				<td class=hk onclick="ns.sf(28)">銅鑼灣</td>
 				<td id=28></td>
-				<td class=hk onclick="sf(29)">天后</td>
+				<td class=hk onclick="ns.sf(29)">天后</td>
 				<td id=29></td>
-				<td class=hk onclick="sf(30)">炮台山</td>
+				<td class=hk onclick="ns.sf(30)">炮台山</td>
 				<td id=30></td>
-				<td class=hktko onclick="sf(31)">北角</td>
+				<td class=hktko onclick="ns.sf(31)">北角</td>
 				<td id=31></td>
-				<td class=hktko onclick="sf(32)">鯽魚涌</td>
+				<td class=hktko onclick="ns.sf(32)">鯽魚涌</td>
 				<td id=32></td>
-				<td class=hk onclick="sf(33)">太古</td>
+				<td class=hk onclick="ns.sf(33)">太古</td>
 				<td id=33></td>
-				<td class=hk onclick="sf(34)">西灣河</td>
+				<td class=hk onclick="ns.sf(34)">西灣河</td>
 				<td id=34></td>
-				<td class=hk onclick="sf(35)">筲箕灣</td>
+				<td class=hk onclick="ns.sf(35)">筲箕灣</td>
 				<td id=35></td>
 			</tr>
 			<tr>
 				<td colspan=20></td>
-				<td class=hk onclick="sf(83)">堅尼地</td>
+				<td class=hk onclick="ns.sf(83)">堅尼地</td>
 				<td id=83></td>
 				<td colspan=6></td>
 				<td class=er>中環南</td>
 				<td></td>
 				<td colspan=20></td>
-				<td class=hk onclick="sf(36)">杏花邨</td>
+				<td class=hk onclick="ns.sf(36)">杏花邨</td>
 				<td id=36></td>
 			</tr>
 			<tr>
 				<td colspan=50></td>
-				<td class=hk onclick="sf(37)">柴灣</td>
+				<td class=hk onclick="ns.sf(37)">柴灣</td>
 				<td id=37></td>
 			</tr>
 			<tr>
