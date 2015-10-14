@@ -12,6 +12,8 @@ $tko:purple;
 $tw:crimson;
 $wch:indigo;
 $wr:mediumorchid;
+$onethird:100% / 3;
+$twothird:$onethird * 2;
 @mixin border($radius:10px){border-radius:$radius;}
 
 .ae{background:$ae;color:white;@include border()}
@@ -27,12 +29,12 @@ $wr:mediumorchid;
 .tw{background:$tw;color:white;@include border}
 .wch{background:$wch;color:white;@include border}
 .wr{background:$wr;color:white;@include border}
-.erwrmos{background:linear-gradient(to right,$wr 33%,$er 33%,$er 67%,$mos 67%);color:black;@include border}
+.erwrmos{background:linear-gradient(to right,$wr $onethird,$er $onethird,$er $twothird,$mos $twothird);color:black;@include border}
 .twkt{background:linear-gradient(to right,$tw 50%,$kt 50%);color:white;@include border}
 .erksr{background:linear-gradient(to right,$ksr 50%,$er 50%);color:black;@include border}
 .wrksr{background:linear-gradient(to right,$wr 50%,$ksr 50%);color:black;@include border}
 .ermos{background:linear-gradient(to right,$er 50%,$mos 50%);color:black;@include border}
-.erkt{background:linear-gradient(to right,$kt 30%,$er 30%,$er 70%,$kt 70%);color:black;@include border}
+.erkt{background:linear-gradient(to right,$kt $onethird,$er $onethird,$er $twothird,$kt $twothird);color:black;@include border}
 .ktmos{background:linear-gradient(to right,$kt 50%,$mos 50%);color:white;@include border}
 .twtc{background:linear-gradient(to right,$tc 50%,$tw 50%);color:white;@include border}
 .twwr{background:linear-gradient(to right,$tw 50%,$wr 50%);color:white;@include border}
