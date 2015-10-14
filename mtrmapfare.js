@@ -18,35 +18,35 @@
 	ns.aesa=aesn.split(" ");
 
 	ns.sf=function(fromstation){
-		ns.aeflag=0;
-		ns.fs=fromstation;
+		this.aeflag=0;
+		this.fs=fromstation;
 		document.getElementById(47).innerHTML='na';
 		document.getElementById(56).innerHTML='na';
-		for (var i=0,j=ns.sa.length;i<j;i++){
+		for (var i=0,j=this.sa.length;i<j;i++){
 			var f=fromstation;
-			var t=ns.sa[i];
+			var t=this.sa[i];
 			if (t==f){
 				document.getElementById(t).innerHTML="x";
 			} else {
 				if (f>t){var tmp=t;t=f;f=tmp;}
 				t-=f;
-				if (ns.ff[f][t] != undefined){
-					var val=ns.ff[f][t].split(" ");
-					document.getElementById(ns.sa[i]).innerHTML=val[ns.ft];
+				if (this.ff[f][t] != undefined){
+					var val=this.ff[f][t].split(" ");
+					document.getElementById(this.sa[i]).innerHTML=val[this.ft];
 				}
 			}
 		}
 	}
 	
 	ns.saef=function(fromstation){
-		ns.aeflag=1;
-		ns.fs=fromstation;
-		for (var i=0,j=ns.sa.length;i<j;i++){
-			document.getElementById(ns.sa[i]).innerHTML="na";
+		this.aeflag=1;
+		this.fs=fromstation;
+		for (var i=0,j=this.sa.length;i<j;i++){
+			document.getElementById(this.sa[i]).innerHTML="na";
 		}
-		for (var i=0,j=ns.aesa.length;i<j;i++){
+		for (var i=0,j=this.aesa.length;i<j;i++){
 			var f=fromstation;
-			var t=ns.aesa[i];
+			var t=this.aesa[i];
 			if (t==f){
 				var ts=t;
 				if (ts==46) ts=42;
@@ -56,16 +56,16 @@
 			} else {
 				if (f>t){var tmp=t;t=f;f=tmp;}
 				t-=f;
-				if (ns.ff[f][t] != undefined){
-					var ts=ns.aesa[i];
+				if (this.ff[f][t] != undefined){
+					var ts=this.aesa[i];
 					if (ts==46) ts=42;
 					if (ts==45) ts=40;
 					if (ts==44) ts=39;
-					if ((ns.ft==1)||(ns.ft==4)||(ns.ft==5)||(ns.ft==7)){
+					if ((this.ft==1)||(this.ft==4)||(this.ft==5)||(this.ft==7)){
 						document.getElementById(ts).innerHTML="na";
 					} else {
-						var val=ns.ff[f][t].split(" ");
-						document.getElementById(ts).innerHTML=val[ns.ft];
+						var val=this.ff[f][t].split(" ");
+						document.getElementById(ts).innerHTML=val[this.ft];
 					}
 				}
 			}
@@ -73,8 +73,8 @@
 	}
 
 	ns.setft=function(sel){
-		ns.ft=parseInt(sel.value);
-		ns.aeflag ?  ns.saef(ns.fs) : ns.sf(ns.fs);
+		this.ft=parseInt(sel.value);
+		this.aeflag ? this.saef(this.fs) : this.sf(this.fs);
 	}
 
 	ns.sf(ns.fs);
