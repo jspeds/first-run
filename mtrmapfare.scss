@@ -1,4 +1,4 @@
-@import 'reset.css';
+@import 'reset';
 $ae:darkcyan;
 $er:skyblue;
 $hk:dodgerblue;
@@ -17,7 +17,7 @@ $twothird:$onethird * 2;
 @mixin border($radius:10px){border-radius:$radius;}
 
 .ae{background:$ae;color:white;@include border()}
-.er{background:$er;color:black;@include border}
+.er{background:$er;color:black;@include border(10px)}
 .hk{background:$hk;color:black;@include border}
 .ksr{background:$ksr;color:black;@include border}
 .kt{background:$kt;color:black;@include border}
