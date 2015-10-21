@@ -49,18 +49,22 @@
 			var t=this.aesa[i];
 			if (t==f){
 				var ts=t;
-				if (ts==46) ts=42;
-				if (ts==45) ts=40;
-				if (ts==44) ts=39;
+				switch (ts){
+					case '46': ts=42; break;
+					case '45': ts=40; break;
+					case '44': ts=39;
+				};
 				document.getElementById(ts).innerHTML="x";
 			} else {
 				if (f>t){var tmp=t;t=f;f=tmp;}
 				t-=f;
 				if (this.ff[f][t] != undefined){
 					var ts=this.aesa[i];
-					if (ts==46) ts=42;
-					if (ts==45) ts=40;
-					if (ts==44) ts=39;
+					switch (ts){
+						case '46': ts=42; break;
+						case '45': ts=40; break;
+						case '44': ts=39;
+					};
 					if ((this.ft==1)||(this.ft==4)||(this.ft==5)||(this.ft==7)){
 						document.getElementById(ts).innerHTML="na";
 					} else {
