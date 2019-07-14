@@ -23,7 +23,7 @@
     ns.sa.forEach(x=>{
 			let f=fromstation,t=x
 			if (t!=f){
-				if (f>t){let tmp=t;t=f;f=tmp}
+			  if (f>t){[f,t]=[t,f]}
 				t-=f
 				if (ns.ff[f][t]!=undefined){
 					document.getElementById(x).innerHTML=ns.ff[f][t].split(' ')[ns.ft]
@@ -48,7 +48,7 @@
 				if ((ns.ft==1)||(ns.ft==4)||(ns.ft==5)||(ns.ft==7)){
 					document.getElementById(ts).innerHTML='na'
 				} else {
-				  if (f>t){let tmp=t;t=f;f=tmp}
+			    if (f>t){[f,t]=[t,f]}
   				t-=f
   				if (ns.ff[f][t]!=undefined){
 						document.getElementById(ts).innerHTML=ns.ff[f][t].split(' ')[ns.ft]
