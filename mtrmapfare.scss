@@ -34,7 +34,7 @@ $twothird:$onethird * 2;
 .erksr{background:linear-gradient(to right,$ksr 50%,$er 50%);color:black;@include border}
 .wrksr{background:linear-gradient(to right,$wr 50%,$ksr 50%);color:black;@include border}
 .ermos{background:linear-gradient(to right,$er 50%,$mos 50%);color:black;@include border}
-.erkt{background:linear-gradient(to right,$kt $onethird,$er $onethird,$er $twothird,$kt $twothird);color:black;@include border}
+.erkt{background:linear-gradient(to right,$er 50%,$kt 50%);color:black;@include border}
 .ktmos{background:linear-gradient(to right,$kt 50%,$mos 50%);color:white;@include border}
 .twtc{background:linear-gradient(to right,$tc 50%,$tw 50%);color:white;@include border}
 .twwr{background:linear-gradient(to right,$tw 50%,$wr 50%);color:white;@include border}
@@ -49,6 +49,7 @@ $twothird:$onethird * 2;
 .twhk{background:linear-gradient(to right,$hk 50%,$tw 50%);color:white;@include border}
 .wchsh{background:linear-gradient(to right,$wch 50%,$sh 50%);color:$tc;@include border}
 .adm{background:linear-gradient(to right,$sh 25%,$hk 25%,$hk 50%,$tw 50%,$tw 75%,$er 75%);color:white;@include border}
+.tcwr{background:linear-gradient(to right,$wr 50%,$tc 50%);color:white;@include border}
 
 body{background:black;line-height:1.3}
 tr{
